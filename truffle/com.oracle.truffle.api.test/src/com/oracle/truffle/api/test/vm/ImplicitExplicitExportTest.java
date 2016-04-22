@@ -257,6 +257,15 @@ public class ImplicitExplicitExportTest {
         public Object call(Object... arguments) {
             return language.importExport(code);
         }
+
+        @Override
+        public void generateIDForGPU() {
+        }
+
+        @Override
+        public long getIDForGPU() {
+            return -1;
+        }
     }
 
     static final String L1 = "application/x-test-import-export-1";
