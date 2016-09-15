@@ -199,12 +199,22 @@ public final class CompilerDirectives {
         boolean throwsControlFlowException() default false;
     }
 
+    @Retention(RetentionPolicy.RUNTIME)
+    @Target({ElementType.TYPE, ElementType.FIELD, ElementType.LOCAL_VARIABLE})
+    public @interface OpenCLNotNull {
+    }
+
+    @Retention(RetentionPolicy.RUNTIME)
+    @Target({ElementType.TYPE, ElementType.FIELD, ElementType.LOCAL_VARIABLE, ElementType.PARAMETER})
+    public @interface OpenCLInstanceOf {
+    }
+
     /**
      * Marks classes as value types. Reference comparisons (==) between instances of those classes
      * have undefined semantics and can either return true or false.
      */
     @Retention(RetentionPolicy.RUNTIME)
-    @Target({ElementType.TYPE})
+    @Target({ElementType.TYPE, ElementType.FIELD})
     public @interface ValueType {
     }
 
