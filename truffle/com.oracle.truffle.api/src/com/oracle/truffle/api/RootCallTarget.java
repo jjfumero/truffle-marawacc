@@ -34,7 +34,7 @@ public interface RootCallTarget extends CallTarget {
 
     RootNode getRootNode();
 
-    void generateIDForGPU();
+    void generateIDForOpenCL();
 
-    long getIDForGPU();
+    long getIDForOpenCL();
 }

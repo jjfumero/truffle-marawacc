@@ -91,10 +91,10 @@ public class DefaultCallTarget implements RootCallTarget {
         return (DefaultTruffleRuntime) Truffle.getRuntime();
     }
 
-    public void generateIDForGPU() {
+    public void generateIDForOpenCL() {
     }
 
-    public long getIDForGPU() {
+    public long getIDForOpenCL() {
         return -1;
     }
 }

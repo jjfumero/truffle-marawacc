@@ -259,11 +259,11 @@ public class ImplicitExplicitExportTest {
         }
 
         @Override
-        public void generateIDForGPU() {
+        public void generateIDForOpenCL() {
         }
 
         @Override
-        public long getIDForGPU() {
+        public long getIDForOpenCL() {
             return -1;
         }
     }
