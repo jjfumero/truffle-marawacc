@@ -209,6 +209,11 @@ public final class CompilerDirectives {
     public @interface OpenCLInstanceOf {
     }
 
+    @Retention(RetentionPolicy.RUNTIME)
+    @Target({ElementType.FIELD})
+    public @interface OpenCLScope {
+    }
+
     /**
      * Marks classes as value types. Reference comparisons (==) between instances of those classes
      * have undefined semantics and can either return true or false.
