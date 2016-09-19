@@ -205,8 +205,8 @@ public final class CompilerDirectives {
     }
 
     @Retention(RetentionPolicy.RUNTIME)
-    @Target({ElementType.TYPE, ElementType.FIELD, ElementType.LOCAL_VARIABLE, ElementType.PARAMETER})
-    public @interface OpenCLInstanceOf {
+    @Target({ElementType.FIELD})
+    public @interface OpenCLKnownType {
     }
 
     @Retention(RetentionPolicy.RUNTIME)
