@@ -211,6 +211,11 @@ public final class CompilerDirectives {
 
     @Retention(RetentionPolicy.RUNTIME)
     @Target({ElementType.FIELD})
+    public @interface OpenCLArrayComplete {
+    }
+
+    @Retention(RetentionPolicy.RUNTIME)
+    @Target({ElementType.FIELD})
     public @interface OpenCLScope {
     }
 
