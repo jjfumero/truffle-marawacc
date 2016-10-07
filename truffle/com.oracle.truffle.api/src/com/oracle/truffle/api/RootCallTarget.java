@@ -32,9 +32,13 @@ import com.oracle.truffle.api.nodes.RootNode;
  */
 public interface RootCallTarget extends CallTarget {
 
+    static int OCL_INIT = -1;
+
     RootNode getRootNode();
 
     void generateIDForOpenCL();
+
+    void resetIDForOpenCL();
 
     long getIDForOpenCL();
 }

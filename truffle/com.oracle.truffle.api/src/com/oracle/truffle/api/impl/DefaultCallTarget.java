@@ -94,7 +94,14 @@ public class DefaultCallTarget implements RootCallTarget {
     public void generateIDForOpenCL() {
     }
 
+    @Override
     public long getIDForOpenCL() {
-        return -1;
+        return RootCallTarget.OCL_INIT;
     }
+
+    @Override
+    public void resetIDForOpenCL() {
+        // empty
+    }
+
 }
