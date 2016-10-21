@@ -201,17 +201,17 @@ public final class CompilerDirectives {
 
     @Retention(RetentionPolicy.RUNTIME)
     @Target({ElementType.TYPE, ElementType.FIELD, ElementType.LOCAL_VARIABLE})
-    public @interface OpenCLNotNull {
+    public @interface ValueNotNull {
     }
 
     @Retention(RetentionPolicy.RUNTIME)
     @Target({ElementType.FIELD})
-    public @interface OpenCLKnownType {
+    public @interface KnownType {
     }
 
     @Retention(RetentionPolicy.RUNTIME)
     @Target({ElementType.FIELD})
-    public @interface OpenCLArrayComplete {
+    public @interface ArrayComplete {
     }
 
     @Retention(RetentionPolicy.RUNTIME)
