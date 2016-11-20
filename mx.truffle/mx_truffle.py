@@ -61,10 +61,16 @@ def _truffle_gate_runner(args, tasks):
     with Task('Truffle Signature Tests', tasks) as t:
         if t: sigtest(['--check', 'binary'])
 
+def pascal(args):
+    """run a Pascal program"""
+    vmArgs, pascalArgs = mx.extract_VM_args(args)
+    mx.run_java(vmArgs + ['-cp', mx.classpath(["TRUFFLE_API", "com.oracle.truffle.pascal"]), "cz.cuni.mff.d3s.trupple.compiler.CompilerMain"] + pascalArgs)
+
 mx_gate.add_gate_runner(_suite, _truffle_gate_runner)
 
 mx.update_commands(_suite, {
     'sl' : [sl, '[SL args|@VM options]'],
     'sldebug' : [sldebug, '[SL args|@VM options]'],
     'slcoverage' : [slcoverage, '[SL args|@VM options]'],
+    'pascal' : [pascal, '[PASCAL args|@VM options]'],
 })
