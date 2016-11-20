@@ -19,7 +19,6 @@ import cz.cuni.mff.d3s.trupple.language.PascalLanguage;
  * Just experimental in this package in this private version.
  *
  */
-
 public class CompilerMain {
 
     private static class Settings {

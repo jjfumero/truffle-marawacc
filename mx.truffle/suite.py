@@ -244,17 +244,17 @@ suite = {
       "license" : "UPL",
     },
 
-     "com.oracle.truffle.pascal" : {
-      "subDir" : "truffle",
-      "sourceDirs" : ["src"],
-      "dependencies" : [
-        "TRUFFLE_API",
-      ],
-      "javaCompliance" : "1.7",
-      "annotationProcessors" : ["TRUFFLE_DSL_PROCESSOR"],
-      "workingSets" : "Truffle,Pascal",
-      "license" : "UPL",
-    },
+     #"com.oracle.truffle.pascal" : {
+     # "subDir" : "truffle",
+     # "sourceDirs" : ["src"],
+     # "dependencies" : [
+     #   "TRUFFLE_API",
+     # ],
+     # "javaCompliance" : "1.8",
+     # "annotationProcessors" : ["TRUFFLE_DSL_PROCESSOR"],
+     # "workingSets" : "Truffle,Pascal",
+    #"license" : "UPL",
+    #},
 
   },
 
