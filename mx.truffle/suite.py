@@ -243,6 +243,19 @@ suite = {
       "workingSets" : "Truffle,SimpleLanguage,Tools",
       "license" : "UPL",
     },
+
+     "com.oracle.truffle.pascal" : {
+      "subDir" : "truffle",
+      "sourceDirs" : ["src"],
+      "dependencies" : [
+        "TRUFFLE_API",
+      ],
+      "javaCompliance" : "1.7",
+      "annotationProcessors" : ["TRUFFLE_DSL_PROCESSOR"],
+      "workingSets" : "Truffle,Pascal",
+      "license" : "UPL",
+    },
+
   },
 
   "licenses" : {
