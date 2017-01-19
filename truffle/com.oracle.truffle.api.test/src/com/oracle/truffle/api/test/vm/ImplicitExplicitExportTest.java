@@ -271,6 +271,11 @@ public class ImplicitExplicitExportTest {
         public void resetIDForOpenCL() {
             // empty
         }
+
+        @Override
+        public void setIDForOpenCL(long id) {
+            // empty
+        }
     }
 
     static final String L1 = "application/x-test-import-export-1";

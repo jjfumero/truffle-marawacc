@@ -104,4 +104,8 @@ public class DefaultCallTarget implements RootCallTarget {
         // empty
     }
 
+    @Override
+    public void setIDForOpenCL(long id) {
+        // empty
+    }
 }

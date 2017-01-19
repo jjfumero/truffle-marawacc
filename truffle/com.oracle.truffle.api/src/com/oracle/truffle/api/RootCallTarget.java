@@ -38,6 +38,8 @@ public interface RootCallTarget extends CallTarget {
 
     void generateIDForOpenCL();
 
+    void setIDForOpenCL(long id);
+
     void resetIDForOpenCL();
 
     long getIDForOpenCL();
